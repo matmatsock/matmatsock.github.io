@@ -9,21 +9,22 @@ body {
 
 .contener {
     display: flex;
+    flex-wrap:wrap ;
     
 }
 
 .left {
-    float: left;
+   /*  float: left; */
     background-color: greenyellow;
     height: 200px;
-    width: 30%;
+    width: 20%;
 }
 
 .right {
-    float: right;
+   /*  float: right; */
     background-color: indianred;
     height: 200px;
-    width: 30%;
+    width: 20%;
 }
 
 .header {
@@ -40,39 +41,40 @@ p {
     height: 200px;
 }
 
-
-@media screen and (max-width: 992px) {
-    .contener{
-        height:  400px;
-        align-content: stretch ;
-    }
-    .left, .center {
-        flex-basis: 50%;
-    }
-    .right {   
-        align-self: flex-end;
-        justify-self: flex-start;
-        position: absolute;
-        width: 100%;
-    }  
+.center {
+    width: 60%;
 }
 
-@media screen and (max-width: 768px) {
-   .contener {
-       flex-wrap: wrap;
-       height: 600px;
-   }
-   .center {
-       order: -1;
-       flex-basis: auto;
+
+ @media screen and (max-width: 992px) {
+    /* .contener{
+        height:  400px;
+        align-content: stretch
+     }; */
+    
+    .left {
+        width: 100%;
+        order: 1
+    }
+    .center {
+        width: 75%;
+    }
+
+    .right {   
+        width: 25%;
+    }  
+} 
+
+ @media screen and (max-width: 768px) {
+   .center {  
+       width: 100%;
    }
    .left {
-       flex-basis: 100%;
+       width: 100%;
    }
    .right {
-       flex-basis: 100%;
-       position: relative;
+      width: 100%;
+      order: 2;
    }
-}
-
-
+} 
+ 
