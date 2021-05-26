@@ -1,0 +1,28 @@
+.btn-text {
+    width: 80%;
+    border: 1px solid gray ;
+}
+
+
+.btn-text-cont{
+ 
+    
+    height: 50px;
+    line-height: 50px;
+    color: red;
+    width: 100%;
+}
+
+.btn-text-cont:hover {
+cursor: pointer;
+}
+    
+
+.contain {
+    width: 80%; 
+}
+
+.line {
+    width: 35% ;
+    color: gray;
+}
