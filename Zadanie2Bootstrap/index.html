@@ -13,17 +13,18 @@
 </head>
 
 <body>
-    <section class="text-center">
+    <section class="text-center" id="accordionExample">
         <h2 class="text-muted mt-5 ">FAQ</h2>
         <hr class="line mx-auto">
-        <div class="container-fluid">
-            <div class="container btn-text rounded-3 bg-light">
-                <div class="text-center btn-text-cont" data-bs-toggle="collapse" href="#Collapse1" >
+        <div class="container-fluid  accordion" >
+            <div class="accordion-item">
+            <div class="container btn-text rounded-3 bg-light accordion-header" id="headingOne">
+                <div class="text-center btn-text-cont" data-bs-toggle="collapse" href="#collapseOne" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne" >
                     Kim jestFront-End Developer?
                 </div>
             </div>
-            <div class="collapse" id="Collapse1">
-                <div class="card rounded-3s container contain">
+            <div class="accordion-collapse collapse show" id="collapseOne" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                <div class="card rounded-3s container contain accordion-body">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus minus obcaecati
                     assumenda nemo, ad corrupti aperiam libero officia pariatur. Beatae sint minus corporis
                     expedita voluptatibus voluptatem nostrum praesentium vel sit. Lorem ipsum dolor sit amet
@@ -32,13 +33,16 @@
                     quaerat a tempore.
                 </div>
             </div>
-            <div class="container btn-text rounded-3 bg-light">
-                <div class="text-center btn-text-cont" data-bs-toggle="collapse" href="#Collapse2" >
-                    Od czego zaczyna się nauka?
+        </div>
+
+        <div class="accordion-item">
+            <div class="container btn-text rounded-3 bg-light accordion-header" id="headingTwo">
+                <div class="text-center btn-text-cont" data-bs-toggle="collapse" href="#collapseTwo" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo" >
+                    Kim jestFront-End Developer?
                 </div>
             </div>
-            <div class="collapse multi-collapse" id="Collapse2">
-                <div class="card rounded-3s container contain">
+            <div class="accordion-collapse collapse show" id="collapseTwo" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                <div class="card rounded-3s container contain accordion-body">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus minus obcaecati
                     assumenda nemo, ad corrupti aperiam libero officia pariatur. Beatae sint minus corporis
                     expedita voluptatibus voluptatem nostrum praesentium vel sit. Lorem ipsum dolor sit amet
@@ -47,13 +51,16 @@
                     quaerat a tempore.
                 </div>
             </div>
-            <div class="container btn-text rounded-3 bg-light">
-                <div class="text-center btn-text-cont" data-bs-toggle="collapse" href="#Collapse3"  >
-                    Znam podstawy, co dalej?
+        </div>
+
+        <div class="accordion-item">
+            <div class="container btn-text rounded-3 bg-light accordion-header" id="headingThree">
+                <div class="text-center btn-text-cont" data-bs-toggle="collapse" href="#collapseThree" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" >
+                    Kim jestFront-End Developer?
                 </div>
             </div>
-            <div class="collapse multi-collapse" id="Collapse3">
-                <div class="card rounded-3s container contain">
+            <div class="accordion-collapse collapse show" id="collapseThree" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                <div class="card rounded-3s container contain accordion-body">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus minus obcaecati
                     assumenda nemo, ad corrupti aperiam libero officia pariatur. Beatae sint minus corporis
                     expedita voluptatibus voluptatem nostrum praesentium vel sit. Lorem ipsum dolor sit amet

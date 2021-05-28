@@ -26,3 +26,6 @@ cursor: pointer;
     width: 35% ;
     color: gray;
 }
+.accordion-item {
+    border:0;
+}
